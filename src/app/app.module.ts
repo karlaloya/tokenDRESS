@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; 
 
 import { AppComponent } from './app.component';
 import { Web3Service } from './services/web3.service';
@@ -9,7 +10,7 @@ import { Web3Service } from './services/web3.service';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [Web3Service],
   bootstrap: [AppComponent]
